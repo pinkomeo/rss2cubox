@@ -18,5 +18,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "tags":["少数派","效率"],
-              "folder":"少数派"
+              "folder":"RSS/少数派"
             }
