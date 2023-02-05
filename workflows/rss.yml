@@ -1,7 +1,6 @@
 on:
   rss:
     url:
-      - http://sspai.com/feed
       - https://buaq.net/rss.xml
 jobs:
   request:
