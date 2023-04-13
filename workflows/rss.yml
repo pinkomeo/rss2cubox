@@ -4,7 +4,7 @@ on:
       - https://buaq.net/rss.xml
 jobs:
   request:
-    name: Make a HTTP Request
+    name: Make a HTTP Request2
     runs-on: ubuntu-latest
     steps:
       - name: Make a HTTP Request
