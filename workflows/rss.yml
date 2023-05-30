@@ -1,7 +1,7 @@
 on:
   rss:
     url:
-      - https://buaq.net/rss.xml
+      - https://github.com/pinkomeo/RSS-Translation/blob/main/rss/buaq_rss.xml
 jobs:
   request:
     name: Make a HTTP Request2
