@@ -1,0 +1,22 @@
+on:
+  rss:
+    url:
+      - https://gitee.com/pinkomeo/RSS-Translation/raw/main/rss/buaq_rss.xml
+jobs:
+  request:
+    name: Make a HTTP Request3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request3
+        uses: actionsflow/axios@v1
+        with:
+          url: ${{secrets.CUBOX_API}}
+          method: POST
+          body: |
+            {
+              "type":"url",
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "description": "${{ on.rss.outputs.description }}",
+              "folder":"不安全"
+            }
