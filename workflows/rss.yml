@@ -2,6 +2,7 @@ on:
   rss:
     url:
       - https://gitee.com/pinkomeo/RSS-Translation/raw/main/rss/buaq_rss.xml
+      - https://gitee.com/pinkomeo/RSS-Translation/raw/main/rss/mckinsey_iw_rss.xml
 jobs:
   request:
     name: Make a HTTP Request2
