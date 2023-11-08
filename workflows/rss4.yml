@@ -1,0 +1,24 @@
+on:
+  rss:
+    url:
+      - https://rss.aishort.top/?type=wasi
+      - https://rss.aishort.top/?type=cneb
+      - https://rss.aishort.top/?type=baidu
+jobs:
+  request:
+    name: Make a HTTP Request2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: ${{secrets.CUBOX_API}}
+          method: POST
+          body: |
+            {
+              "type":"url",
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "description": "${{ on.rss.outputs.description }}",
+              "folder":"新闻"
+            }
