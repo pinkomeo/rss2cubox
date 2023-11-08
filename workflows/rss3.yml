@@ -1,0 +1,25 @@
+on:
+  rss:
+    url:
+      - https://rss.aishort.top/?type=xlrocket
+      - https://rss.aishort.top/?type=AppSolution
+      - https://rss.aishort.top/?type=huxiu
+      - https://rss.aishort.top/?type=iresearch
+jobs:
+  request:
+    name: Make a HTTP Request2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: ${{secrets.CUBOX_API}}
+          method: POST
+          body: |
+            {
+              "type":"url",
+              "content":"${{ on.rss.outputs.link }}", 
+              "title": "${{ on.rss.outputs.title }}",
+              "description": "${{ on.rss.outputs.description }}",
+              "folder":"互联网"
+            }
