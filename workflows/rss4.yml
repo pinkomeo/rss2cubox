@@ -2,8 +2,9 @@ on:
   rss:
     url:
       - https://rss.aishort.top/?type=wasi
-      - https://rss.aishort.top/?type=cneb
-      - https://rss.aishort.top/?type=baidu
+      - https://rsshub.rssforever.com/jike/user/wenhao1996
+      - https://rsshub.rssforever.com/youzhiyouxing/materials
+      - https://rsshub.rssforever.com/jike/user/4c134b85-6cef-4aef-ae33-e8962bfe422d
 jobs:
   request:
     name: Make a HTTP Request2
@@ -20,5 +21,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "description": "${{ on.rss.outputs.description }}",
-              "folder":"新闻"
+              "folder":"新闻经济"
             }
