@@ -2,6 +2,8 @@ on:
   rss:
     url:
       - http://sspai.com/feed
+      - https://plink.anyfeeder.com/ssapi/matrix
+      - https://www.ruanyifeng.com/blog/atom.xml
 jobs:
   request:
     name: Make a HTTP Request
@@ -17,5 +19,5 @@ jobs:
               "type":"url",
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
-              "folder":"少数派"
+              "folder":"数字生活"
             }
