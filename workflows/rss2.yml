@@ -3,7 +3,6 @@ on:
     url:
       - http://sspai.com/feed
       - https://plink.anyfeeder.com/ssapi/matrix
-      - https://www.ruanyifeng.com/blog/atom.xml
 jobs:
   request:
     name: Make a HTTP Request
