@@ -3,8 +3,9 @@ on:
     url:
       - https://rss.aishort.top/?type=xlrocket
       - https://rss.aishort.top/?type=AppSolution
-      - https://rss.aishort.top/?type=huxiu
+      - https://www.appinn.com/feed/
       - https://rss.aishort.top/?type=iresearch
+      - https://rsshub.rssforever.com/jike/user/C81D3916-D109-40CA-8776-28E4FED54900
 jobs:
   request:
     name: Make a HTTP Request2
@@ -21,5 +22,5 @@ jobs:
               "content":"${{ on.rss.outputs.link }}", 
               "title": "${{ on.rss.outputs.title }}",
               "description": "${{ on.rss.outputs.description }}",
-              "folder":"互联网"
+              "folder":"软件效率"
             }
