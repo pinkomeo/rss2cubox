@@ -1,8 +1,8 @@
 on:
   rss:
     url:
-      - https://rss.aishort.top/?type=wasi
-      - https://rsshub.rssforever.com/jike/user/wenhao1996
+      # - https://rss.aishort.top/?type=wasi
+      # - https://rsshub.rssforever.com/jike/user/wenhao1996
       # - https://rsshub.rssforever.com/youzhiyouxing/materials
       - https://rsshub.rssforever.com/jike/user/4c134b85-6cef-4aef-ae33-e8962bfe422d
 jobs:
