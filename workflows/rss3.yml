@@ -1,10 +1,8 @@
 on:
   rss:
     url:
-      - https://rss.aishort.top/?type=xlrocket
-      - https://rss.aishort.top/?type=AppSolution
+      - https://xlrocket.blog/feed/
       - https://www.appinn.com/feed/
-      - https://rss.aishort.top/?type=iresearch
       - https://rsshub.rssforever.com/jike/user/C81D3916-D109-40CA-8776-28E4FED54900
 jobs:
   request:
